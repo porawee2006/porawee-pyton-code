@@ -12,13 +12,30 @@ class Rectangle:
 
     # Method to get the area
     def get_area(self):
-        pass
+        area = self.length * self.width
+        return area
 
     # Method to get the perimeter
     def get_perimeter(self):
-        pass
+        return self.length + self.width + self.length * self.width
 
 
 rect = Rectangle(10, 5)
 print(rect.get_area())       # Should print 50
 print(rect.get_perimeter())  # Should print 30
+
+class Cirle
+
+    def __int__(self, radius);
+        self.radius = radius
+        print("Cirle created!")
+
+    def getArae(self):
+        return 3.1416 * self.radius * self.radius
+    
+    def getPerimeter(self):
+         return 2 * 3.1416 * self.radius 
+
+myCircle = Circle(10)
+print("Circle Area:", myCircle.get_area())        
+print("Circle Perimeter:", myCircle.get_perimeter())
