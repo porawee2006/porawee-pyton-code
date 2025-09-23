@@ -25,3 +25,22 @@ Example
     Congratulations! You won in 3 attempts!
 
 """
+import random
+    
+print("what is number 1 - 20")
+print("You have 6 attempts")
+
+random_number = random.randint(1, 20)
+    
+for i range(6):
+    number = input(f"attempts{i+1}/6what is number?:")
+    
+    if random_number == number:
+        print("You won")
+        break
+
+    elif random_number < number:
+        print("no too high try agin")
+
+    elif:
+        print("no to low try agin")

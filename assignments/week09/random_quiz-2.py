@@ -58,8 +58,40 @@ def get_divisibility_hint(number):
 
 def get_range_hint(number, current_min=1, current_max=100):
     # Return narrowed range around the number
-    pass
+        return f"HINT: The Narrow range arount the number is {rang(number - 12,number + 12)}"
 
 def get_thefirst_digit_hint(number):
     # Retun the first digit of the number
-    pass
+    first_digit = number // 10
+        return f"HINT: The first digit is{first_digit}"
+
+random_number = random.randint(1, 100)
+addtempt = 1
+
+while True:
+
+    number = int(input(f"attempts{addtempt+}what is number?:"))
+    
+    if random_number == number:
+        print("You won")
+        break
+
+    elif random_number < number:
+        print("no too high try agin")
+
+    elif:
+        print("no to low try agin")
+    
+    if addtempt = 3:
+        print(get_parity_hint(random_number))
+
+    if addtempt = 5:
+        print(get_divisibility_hint(random_number))
+
+    if addtempt = 7:
+        print(get_range_hint(random_number))
+
+    if addtempt = 10:
+        print(get_thefirst_digit_hint(random_number))
+
+    addtempt = addtempt +1
